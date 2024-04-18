@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.active {
+  @apply border-b-2 border-b-violet-500;
+}
+
+.react-tag-input {
+  @apply p-0 m-0 border-2  rounded-md  !important;
+}
+
+.react-tag-input__input {
+  @apply placeholder:text-gray-400 py-5 px-2.5 m-0 outline-2   ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 !important;
+}
+
+* {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+.font-whisper {
+  font-family: 'Whisper', cursive;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-violet-500;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  @apply text-violet-500;
+}
+
+.slick-dots li button:before {
+  @apply dark:text-violet-400;
+}
