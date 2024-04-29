@@ -36,34 +36,34 @@ function Detail() {
   }
 
   return (
-    <div className="mx-auto max-w-screen-2xl dark:bg-smoky dark:text-mainColor">
-      <div className="relative">
+    <div className='mx-auto  max-w-screen-2xl dark:bg-smoky dark:text-mainColor'>
+      <div className='relative'>
         <img
           src={blog?.imgUrl}
           alt={blog?.title}
-          className="object-cover object-center w-full h-[350px] brightness-50"
+          className='object-cover object-center w-full h-[350px] brightness-50'
         />
-        <div className="absolute bottom-0 left-0 right-0 py-4 text-center ">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-mainColor font-whisper">
+        <div className='absolute bottom-0 left-0 right-0 py-4 text-center '>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl text-mainColor font-whisper'>
             {blog?.title}
           </h1>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 px-4 sm:px-12 md:px-24 lg:px-36 sm:gap-6 sm:grid-cols-12">
-        <div className="sm:col-span-8">
-          <div className="py-5 border-b-2">
+      <div className='grid grid-cols-1 px-4 sm:px-12 md:px-24 lg:px-36 sm:gap-6 sm:grid-cols-12'>
+        <div className='sm:col-span-8'>
+          <div className='py-5 border-b-2'>
             <span>By </span>
-            <span className="font-semibold capitalize"> {blog?.author} </span>
+            <span className='font-semibold capitalize'> {blog?.author} </span>
             <span> - {blog?.timestamp.toDate().toDateString()}</span>
           </div>
 
-          <div className="py-4 leading-7 tracking-wider">
+          <div className='py-4 leading-7 tracking-wider'>
             <p>{blog?.description}</p>
           </div>
         </div>
 
-        <div className="col-span-4 ">
+        <div className='col-span-4 '>
           <div>
             <Tags tags={tags} />
           </div>

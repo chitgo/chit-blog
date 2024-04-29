@@ -1,7 +1,10 @@
 function Spinner() {
   return (
-    <div role="status" className="text-center mt-24">
-      <span className="text-4xl ">Loading...</span>
+    <div
+      role='status'
+      className='h-screen mt-24 text-center dark:text-white dark:bg-smoky'
+    >
+      <span className='text-4xl '>Loading...</span>
     </div>
   )
 }
